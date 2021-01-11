@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-Master-Class.iml" filepath="$PROJECT_DIR$/.idea/Java-Master-Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/byteShortIntLong/byteShortIntLong.iml" filepath="$PROJECT_DIR$/byteShortIntLong/byteShortIntLong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/charBoolean/charBoolean.iml" filepath="$PROJECT_DIR$/charBoolean/charBoolean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes/classes.iml" filepath="$PROJECT_DIR$/classes/classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/constructorProblems/constructorProblems.iml" filepath="$PROJECT_DIR$/constructorProblems/constructorProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controlFlow/controlFlow.iml" filepath="$PROJECT_DIR$/controlFlow/controlFlow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controlFlowProblems/controlFlowProblems.iml" filepath="$PROJECT_DIR$/controlFlowProblems/controlFlowProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gameMethods/gameMethods.iml" filepath="$PROJECT_DIR$/gameMethods/gameMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloWorld/helloWorld.iml" filepath="$PROJECT_DIR$/helloWorld/helloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operators/operators.iml" filepath="$PROJECT_DIR$/operators/operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/person.iml" filepath="$PROJECT_DIR$/person/person.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scannerExample/scannerExample.iml" filepath="$PROJECT_DIR$/scannerExample/scannerExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sumCalculator/sumCalculator.iml" filepath="$PROJECT_DIR$/sumCalculator/sumCalculator.iml" />
+    </modules>
+  </component>
+</project>
