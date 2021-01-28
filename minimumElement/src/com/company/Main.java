@@ -1,5 +1,6 @@
 package com.company;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -12,24 +13,29 @@ public class Main {
         int count = scanner.nextInt();
         scanner.nextLine();
 
-        int[] test = readIntegers(count);
-        int returnedMin = findMin(test);
+//        int[] test = readInteger(count);
+//        int returnedMin = findMin(test);
+//
+//        System.out.println(Arrays.toString(test));
+//        System.out.println("Min = " + returnedMin);
 
-        System.out.println(Arrays.toString(test));
-        System.out.println("Min = " + returnedMin);
+        readElements(5);
     }
 
-    public static int[] readIntegers(int count){
+    public static int readInteger(){
+        System.out.println("Enter count: ");
+        int count = scanner.nextInt();
+        scanner.nextLine();
+        return count;
+    }
+
+    public static int[] readElements(int count){
         int[] array = new int[count];
         for (int i = 0; i < array.length; i++){
             System.out.println("Enter a number: ");
             array[i] = scanner.nextInt();
         }
         return array;
-    }
-
-    public static int[] readElements(int ){
-
     }
 
     public static int findMin( int[] array){
