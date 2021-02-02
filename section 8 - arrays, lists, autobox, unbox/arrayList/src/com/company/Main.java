@@ -12,12 +12,14 @@ public class Main {
         int choice = 0;
         printInstructions();
         while(!quit){
-            System.out.println("Enter your choice: ");
+            System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
+            scanner.nextLine();
 
             switch(choice){
                 case 0:
                     printInstructions();
+                    break;
                 case 1:
                     groceryList.printGroceryList();
                     break;
@@ -54,30 +56,28 @@ public class Main {
     }
 
     public static void addItem(){
-        System.out.println("Please enter the grocery item: ");
+        System.out.print("Please enter the grocery item: ");
         groceryList.addGroceryItem(scanner.nextLine());
     }
 
     public static void modifyItem(){
-        System.out.println("Enter item number: ");
-        int itemNo = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Enter replacement item: ");
+        System.out.println("Enter item name: ");
+        String itemNo = scanner.nextLine();
+        System.out.println("Enter new item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNo-1, newItem);
+        groceryList.modifyGroceryItem(itemNo, newItem);
     }
 
     public static void removeItem(){
-        System.out.println("Enter item number: ");
-        int itemNo = scanner.nextInt();
-        scanner.nextLine();
+        System.out.println("Enter item name: ");
+        String itemNo = scanner.nextLine();
         groceryList.removeGroceryItem(itemNo);
     }
 
     public static void searchForItem(){
         System.out.println("Enter item to search for: ");
         String searchItem = scanner.nextLine();
-        if (groceryList.findItem(searchItem) != null){
+        if (groceryList.onFile(searchItem)){
             System.out.println("Found " + searchItem + " in the grocery list.");
         }else{
             System.out.println(searchItem + "is not in the grocery list.");
