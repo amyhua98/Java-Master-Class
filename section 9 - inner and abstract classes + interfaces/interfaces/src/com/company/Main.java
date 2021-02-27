@@ -3,6 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	    ITelephone amyPhone;
+	    amyPhone = new DeskPhone(123456789);
+	    amyPhone.powerOn();
+	    amyPhone.callPhone(123456789);
+	    amyPhone.answer();
     }
 }
