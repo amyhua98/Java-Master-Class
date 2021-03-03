@@ -16,7 +16,7 @@ public class Gearbox {
     }
 
     public void operateClutch(boolean in){
-        this.cl
+        this.clutchIsIn = in;
     }
 
     public class Gear{
