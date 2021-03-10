@@ -31,6 +31,7 @@ public class Album {
         System.out.println("This album does not have a track " + trackNumber);
         return false;
     }
+    
 
     public boolean addToPlayList(String title, LinkedList<Song> playlist) {
         Song song = songs.findSong(title);
