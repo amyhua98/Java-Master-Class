@@ -10,7 +10,7 @@ public class Main {
         dog.eat();
         dog.breathe();
 
-        Parrot parrot = new Parrot("Parrot");
+        Parrot parrot = new Parrot("Australian ringneck");
         parrot.eat();
         parrot.breathe();
         parrot.fly();
