@@ -5,6 +5,16 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+        FootballPlayer joe = new FootballPlayer("Joe");
+        BaseballPlayer pat = new BaseballPlayer("Pat");
+        SoccerPlayer beckham = new SoccerPlayer("Beckham");
+
+        Team famous = new Team("Famous");
+        famous.addPPlayer(joe);
+        famous.addPPlayer(pat);
+        famous.addPPlayer(beckham);
+
+        System.out.println(famous.numPlayers());
 
 
 //	    ArrayList items = new ArrayList();
