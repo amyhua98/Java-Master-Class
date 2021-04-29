@@ -9,13 +9,23 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team famous = new Team("Famous");
-        famous.addPPlayer(joe);
-        famous.addPPlayer(pat);
-        famous.addPPlayer(beckham);
+        Team<FootballPlayer> famous = new Team<>("Famous");
+        famous.addPlayer(joe);
+//        famous.addPlayer(pat);
+//        famous.addPlayer(beckham);
 
         System.out.println(famous.numPlayers());
 
+
+        Team<BaseballPlayer> baseballTeam = new Team<>("Chicago Cubs");
+        baseballTeam.addPlayer(pat);
+
+        //Compiles but error at runtime, needs to add <T extends Player> in Team.java
+//        Team<String> brokenTeam = new Team<>("cant work");
+//        brokenTeam.addPlayer("no-one");
+
+        Team<SoccerPlayer> soccerTeam = new Team<>("Manchester United");
+        soccerTeam.addPlayer(beckham);
 
 //	    ArrayList items = new ArrayList();
 //	    items.add(1);
